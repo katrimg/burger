@@ -6,16 +6,24 @@
   <div class="row">
     <div class="col-sm">
       <ul>
-        {{#each burgers}} {{#unless devoured}} <li>{{burger_name }} </li>{{/unless}} {{/each}}
+        {{#each burgers}} {{#unless devoured}} <li>
+          {{burger_name}}
+          <!-- need to add buttons that trigger ajax request to move burgers over when devoured = true -->
+           </li>{{/unless}} {{/each}}
       </ul>
     </div>
 
     <div class="col-sm">
       <ul>
-        {{#each burgers}} {{#if devoured}} <li>{{burger_name}}</li> {{/if}} {{/each}}
+        {{#each burgers}} {{#if devoured}} <li>
+          {{burger_name}}
+          <!-- need to add buttons that trigger ajax request to move burgers over when devoured = true -->
+        </li> {{/if}} {{/each}}
       </ul>
     </div>
     </div>
+
+    
 
     <div class="row">
       <div id= "burger-form">
