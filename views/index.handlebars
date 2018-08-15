@@ -8,7 +8,8 @@
       <ul>
         {{#each burgers}} {{#unless devoured}} <li>
           {{burger_name}}
-          <!-- need to add buttons that trigger ajax request to move burgers over when devoured = true -->
+           <!-- need to add buttons that trigger ajax request to move burgers over when devoured = true -->
+           <button class="btn btn-success devour-button" type="submit">Devour It!</button>
            </li>{{/unless}} {{/each}}
       </ul>
     </div>
@@ -17,7 +18,7 @@
       <ul>
         {{#each burgers}} {{#if devoured}} <li>
           {{burger_name}}
-          <!-- need to add buttons that trigger ajax request to move burgers over when devoured = true -->
+
         </li> {{/if}} {{/each}}
       </ul>
     </div>
